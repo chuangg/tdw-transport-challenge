@@ -1,10 +1,10 @@
 ## To install
-* Install Dependecy 
+* Install Dependency 
   * Pystar
     * Install pyastar git clone <https://github.com/hjweide/pyastar>
     * cd pyastar
     * `pip install -e .`
-  * tdw : `pip install tdw `
+  * TDW python package : `pip install tdw `
   * [Transport Challenge API](https://github.com/alters-mit/transport_challenge) 
 * Clone this repository
 * Then `cd tdw-transport-challenge`
