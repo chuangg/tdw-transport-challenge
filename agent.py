@@ -4,8 +4,8 @@ import argparse
 
 from tdw_transport_challenge.challenge import Challenge
 
-from simple_agent import TestAgent
-from h_agent import H_agent
+from tdw_transport_challenge.simple_agent import TestAgent
+from tdw_transport_challenge.h_agent import H_agent
 
 import logging
 import os
