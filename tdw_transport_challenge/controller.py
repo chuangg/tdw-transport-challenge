@@ -29,7 +29,7 @@ class Basic_controller(Transport):
         """
 
         super().__init__(port=port, launch_build=False, \
-                screen_width=screen_size, screen_height=screen_size, fov = fov, check_pypi_version=False)
+                screen_width=screen_size, screen_height=screen_size, fov = fov)
         self.demo = demo
         self.physics = physics
         self.exp = exp
