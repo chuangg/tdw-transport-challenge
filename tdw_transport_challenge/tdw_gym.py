@@ -83,7 +83,7 @@ class TDW(Env):
         self.f = open(f'action{port}.log', 'w')
         self.action_list = []
         if self.train == 0:
-            path = resource_filename(__name__, "test_dataset.pkl")
+            path = resource_filename(__name__, "train_dataset.pkl")
             with open(path, 'rb') as f:
                 self.data = pickle.load(f)
             random.shuffle(self.data)
