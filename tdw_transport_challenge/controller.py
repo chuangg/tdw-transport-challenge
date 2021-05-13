@@ -23,12 +23,12 @@ class Basic_controller(Transport):
 
     def __init__(self, port: int = 1071, demo=False, \
                         screen_size = 128, physics=True, \
-                        train = 0, exp = False, fov = 90):
+                        train = 0, exp = False, fov = 90, launch_build=False):
         """
         :param port: The port number.
         """
 
-        super().__init__(port=port, launch_build=False, \
+        super().__init__(port=port, launch_build=launch_build, \
                 screen_width=screen_size, screen_height=screen_size, fov = fov)
         self.demo = demo
         self.physics = physics

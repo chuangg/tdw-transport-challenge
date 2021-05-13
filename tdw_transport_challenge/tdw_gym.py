@@ -20,7 +20,7 @@ class TDW(Env):
     
     def __init__(self, port = 1071, ip_address=None, demo=False, physics = True, \
                         rank=0, num_scenes = 0, train = 0, \
-                        screen_size = 128, exp = False, launch_build_inside_docker=False):
+                        screen_size = 128, exp = False, launch_build=False):
         self.physics = physics
         self.exp = exp
         self.rank = rank
@@ -29,9 +29,7 @@ class TDW(Env):
         self.train = train
         self.port = port
         self.docker_id = None
-        if launch_build_inside_docker:
-            p = subprocess.Popen(shlex.split(f'./TDW/TDW.x86_64 -port={port}'))
-        else:
+        if not launch_build:
             if ip_address is not None:
                 self.docker_id = create_tdw(port=port)
                 print('connect:', self.docker_id, port)
@@ -41,7 +39,7 @@ class TDW(Env):
         self.screen_size = screen_size
         self.controller = Controller(port=port, demo=demo, \
                             screen_size = self.screen_size, physics = physics, \
-                            train = train, exp = exp, fov = 90)
+                            train = train, exp = exp, fov = 90, launch_build=launch_build)
         print("Controller connected")
         rgb_space = gym.spaces.Box(0, 256,
                                  (3,

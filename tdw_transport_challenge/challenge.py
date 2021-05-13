@@ -20,8 +20,8 @@ class Challenge:
         self.logger.info("Environment Created")
         self.max_step_num = 1000
         # Check if custom pkl file is given
-        if os.path.isfile("/test_dataset/test_env.pkl"):
-            with open(pkg_resources.resource_filename("tdw_transport_challenge", 'train_dataset.pkl'), 'rb') as f:
+        if os.path.isfile("/test_dataset/test_dataset.pkl"):
+            with open(pkg_resources.resource_filename("tdw_transport_challenge", 'test_dataset.pkl'), 'rb') as f:
                 self.data = pickle.load(f)
         else:
             with open(pkg_resources.resource_filename("tdw_transport_challenge", 'train_dataset.pkl'), 'rb') as f:
