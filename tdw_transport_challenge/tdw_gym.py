@@ -63,7 +63,7 @@ class TDW(Env):
             'depth': depth_space,
             'agent': gym.spaces.Box(-30, 30, (6, ), dtype=np.float32),
             'held_objects': gym.spaces.Tuple((gym.spaces.Discrete(30), gym.spaces.Discrete(30))),
-            'visible_objects': gym.spaces.Tuple(object_space for _ in range(20)),
+            'visible_objects': gym.spaces.Tuple([object_space for _ in range(20)]),
             'status': gym.spaces.Discrete(2),
             'FOV': gym.spaces.Box(0, 120, (1,), dtype=np.float32),
             'camera_matrix': gym.spaces.Box(-30, 30, (4, 4), dtype=np.float32)
