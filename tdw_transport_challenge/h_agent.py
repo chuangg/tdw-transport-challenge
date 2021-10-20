@@ -2,8 +2,7 @@ import os
 
 import numpy as np
 import cv2
-import pyastar
-
+import pyastar2d as pystar
 import random
 import time
 import math
