@@ -1,11 +1,9 @@
-## To install
-* Install Dependency 
-  * Pystar
-    * Install pyastar git clone <https://github.com/hjweide/pyastar>
-    * cd pyastar
-    * `pip install -e .`
-  * TDW python package : `pip install tdw `
-  * [Transport Challenge API](https://github.com/alters-mit/transport_challenge) 
-* Clone this repository
-* Then `cd tdw-transport-challenge`
-* Run `pip install -e .`
+## To Install
+* Clone the repository 
+* And then `cd tdw-transport-challenge` and `pip install -e .`
+* Install [Scikit-learn](https://scikit-learn.org/stable/install.html) 
+* This code also includes a baseline agent `h_agent`. This `h_agent` has following dependencies:
+  * Pystar `pip install pystar2d` or  install from `https://github.com/hjweide/pyasta`
+  * Install opencv/cv2
+*  Setting up `h_agent` is completely optional and is not required for using this gym code for the transport challenge 
+
