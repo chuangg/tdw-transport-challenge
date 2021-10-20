@@ -1,6 +1,6 @@
 ## To Install
 * Clone the repository 
-* And then `cd tdw-transport-challenge` and `pip install -e .`
+* `cd tdw-transport-challenge` and `pip install -e .`
 * Install [Scikit-learn](https://scikit-learn.org/stable/install.html) 
 * This code also includes a baseline agent `h_agent`. This `h_agent` has following dependencies:
   * Pystar `pip install pystar2d` or  install from `https://github.com/hjweide/pyasta`
